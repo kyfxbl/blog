@@ -1,0 +1,6 @@
+.idea
+node_modules
+public
+scaffolds
+db.json
+package-lock.json
