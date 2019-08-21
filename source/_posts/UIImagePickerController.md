@@ -5,7 +5,7 @@ categories: iOS
 这个组件跟PopoverController一样，也是直接使用，不需要也不允许sub-classing的类，但是相对来说比PopoverController要复杂一些
 <!--more-->
 
-The <span class="s1">UIImagePickerController</span> class supports portrait mode only. <span style="color:#ff0000">This class is intended to be used as-is and does not support subclassing.</span> The view hierarchy for this class is private and must not be modified, with one exception. You can assign a custom view to the <span class="s2">cameraOverlayView</span> property and use that view to present additional information or manage the interactions between the camera interface and your code.
+The UIImagePickerController class supports portrait mode only. This class is intended to be used as-is and does not support subclassing. The view hierarchy for this class is private and must not be modified, with one exception. You can assign a custom view to the cameraOverlayView property and use that view to present additional information or manage the interactions between the camera interface and your code.
 
 开发者不是通过继承的方式来定义此控件的行为，而是通过设置它的属性，以及实现其delegate方法
 

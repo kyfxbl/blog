@@ -463,12 +463,18 @@ public class BookDAOTest {
 
 实际运行一下这个单元测试类，可以在控制台看到以下输出： 
 
+```
 2012-8-16 19:37:42 org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction 信息: Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@183d59c]; rollback [true] 1903 [main] WARN  o.h.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 60.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead. Hibernate:     select         book0_.ID as ID0_,         book0_.NAME as NAME0_,         book0_.ISBN as ISBN0_     from         developframeworkschema.book book0_     where         book0_.ISBN=? 
 2012-8-16 19:37:42 org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction 信息: Rolled back transaction after test execution for test context 
+```
 
 每个方法开始之前，都会开启一个新事务，在执行完毕之后，该事务都会被回滚 
 
-其中还有一行警告信息：[DEPRECATION] Encountered positional parameter near line 1, column 60.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead. 这是因为在GenericDAO中采用了hibernate4不推荐的写法：
+其中还有一行警告信息：
+
+```
+[DEPRECATION] Encountered positional parameter near line 1, column 60.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead. 这是因为在GenericDAO中采用了hibernate4不推荐的写法：
+```
 
 ```
 private void setQueryParams(Query query, Object[] params) {

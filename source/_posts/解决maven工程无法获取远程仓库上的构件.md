@@ -13,10 +13,12 @@ categories: java
 
 但是如果仅下载test-son，然后从test-son里执行maven package，则构建失败，报错：
 
+```
 [ERROR] Failed to execute goal on project test-son: 
 
 Could not resolve dependencies for project net.kyfxbl.test:test-son:jar:0.0.1-SNAPSHOT: 
 Could not find artifact net.kyfxbl.test:test-parent:jar:0.0.1-SNAPSHOT
+```
 
 实际上这个时候在远程仓库里已经有test-parent的构件了 
 ![](http://dl.iteye.com/upload/attachment/0074/3117/245b1020-5795-30c8-8fed-70b363e5fdc5.png)

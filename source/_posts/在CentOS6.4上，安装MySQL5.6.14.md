@@ -95,9 +95,11 @@ chkconfig --list
 
 上网搜索了一下，应该先执行这个命令
 
+```
 mysql_install_db --user=mysql --ldata=/var/lib/mysql/
+```
 
-[root@yilos-dev-image bin]# service mysql start Starting MySQL. SUCCESS!
+\[root@yilos-dev-image bin\]# service mysql start Starting MySQL. SUCCESS!
 
 初始化的root密码是空，注意是MySQL的root，不是CentOS的root
 
@@ -113,4 +115,4 @@ show databases;
 
 show tables;
 
-use [dbname];
+use \[dbname\];

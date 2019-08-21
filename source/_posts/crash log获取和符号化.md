@@ -46,6 +46,7 @@ Thread 0:
 
 只要是曾经编译过该app的机器，应该都满足这个条件。然后把拿到的.ips或.crash文件导入到xcode，就会自动符号化了，完全符号化以后，crash log就可读了：
 
+```
 Last Exception Backtrace: 
 0   CoreFoundation                  0x183cba950 __exceptionPreprocess + 132 
 1   libobjc.A.dylib                 0x1905701fc objc_exception_throw + 60 
@@ -82,6 +83,7 @@ Thread 0 Crashed:
 10  UIKit                           0x0000000186ceafd8 UIApplicationMain + 1152 
 11  TestNotification                0x000000010002998c main (main.m:16) 
 12  libdyld.dylib                   0x0000000190b63a9c start + 0
+```
 
 line3可以很清楚地看出，崩溃发生在MainViewController的42行，关于dSYM的介绍，详见这篇文章：
 [crash log](http://www.raywenderlich.com/33669/overview-of-ios-crash-reporting-tools-part-1)

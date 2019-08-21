@@ -32,7 +32,7 @@ ValueStack是一个栈的数据结构（FILO），最后进入值栈的对象，
 
 这个可以分为2种场景
 
-## s:标签
+## s标签
 
 ```
 <s:property value="" />

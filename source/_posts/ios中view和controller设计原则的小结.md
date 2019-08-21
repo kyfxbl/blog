@@ -26,7 +26,9 @@ categories: iOS
     self.view = rootview;
 }
 ```
-如果view需要复用的话：```
+如果view需要复用的话：
+
+```
 -(void) loadView
 {
     CGRect screenSize = [[UIScreen mainScreen] bounds];

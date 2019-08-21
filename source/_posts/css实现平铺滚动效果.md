@@ -1,4 +1,4 @@
-title: CSS实现平铺滚动效果
+title: css实现平铺滚动效果
 date: 2014-11-13 15:12
 categories: web
 ---

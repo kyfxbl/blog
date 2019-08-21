@@ -17,7 +17,7 @@ task-sla是某一个业务子模块，不包含web内容
 task-sla-web是某一个web子模块 
 task-web-dist是最外围的web工程，聚合多个web工程，形成最终的war包 
 
-依赖关系是：task-web-dist依赖task-sla-web依赖task-sla依赖task-common 
+依赖关系是：task-web-dist依赖task-sla-web, task-sla-web依赖task-sla，task-sla依赖task-common 
 
 # task-aggregator 
 

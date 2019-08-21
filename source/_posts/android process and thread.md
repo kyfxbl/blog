@@ -2,7 +2,7 @@ title: android process and thread
 date: 2013-09-24 10:33
 categories: android 
 ---
-android中近程和线程的有关知识点，11年的时候写的，不知道现在是否已经过时了。通过在manifest中配置，是可以改变android系统的默认行为的，不过本文只总结默认配置下的情况
+android中近程和线程的有关知识点，2011年的时候写的，不知道现在是否已经过时了。通过在manifest中配置，是可以改变android系统的默认行为的，不过本文只总结默认配置下的情况
 <!--more-->
 
 1. 一个application对应一个process 
