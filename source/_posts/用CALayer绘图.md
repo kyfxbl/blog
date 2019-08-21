@@ -2,6 +2,7 @@ title: 用CALayer绘图
 date: 2015-12-27 15:00:49
 categories: iOS
 ---
+![calayer](http://pic.kyfxbl.com/calayer.jpeg)
 在iOS中绘图，可以使用UIView，也可以使用CALayer。实际上，UIView也是由底层的CALayer完成绘制的工作
 <!--more-->
 

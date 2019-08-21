@@ -2,6 +2,7 @@ title: 这几天使用IB的总结
 date: 2015-12-11 00:21:10
 categories: iOS
 ---
+![ib](http://pic.kyfxbl.com/ib.jpeg)
 这几天尝试了使用Interface Builder，跟以前用纯代码开发还是有比较明显的区别，本文总结一下这几天的感受
 <!--more-->
 

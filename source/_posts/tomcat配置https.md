@@ -2,6 +2,7 @@ title: tomcat配置https
 date: 2016-01-17 18:02:54
 categories: java
 ---
+![tomcat](http://pic.kyfxbl.com/tomcat.jpg)
 java平台的keystore是对https证书的一种包装，配置方式和http服务器的证书配置略有不同
 <!--more-->
 
