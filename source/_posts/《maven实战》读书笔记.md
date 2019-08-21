@@ -1,6 +1,6 @@
 title: 《maven实战》读书笔记
 date: 2013-09-24 11:07
-categories: java
+categories: 读书笔记
 ---
 这本书详细介绍了maven的基本概念和最佳实践。本文记录一些要点
 <!--more-->

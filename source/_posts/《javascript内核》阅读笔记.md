@@ -1,6 +1,6 @@
 title: 《javascript内核》阅读笔记
 date: 2013-09-24 10:31
-categories: javascript
+categories: 读书笔记
 ---
 本文是阅读《javascript内核》的笔记总结。原系列文章在iteye上
 <!--more-->
