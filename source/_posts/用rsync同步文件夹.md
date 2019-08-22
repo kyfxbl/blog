@@ -2,6 +2,7 @@ title: 用rsync同步文件夹
 date: 2015-08-21 15:18:25
 categories: linux
 ---
+![rsync](http://pic.kyfxbl.com/rsync.jpg)
 用rsync命令在不同机器间同步文件夹，及hexo-deployer-rsync一个BUG的规避方法
 <!--more-->
 
