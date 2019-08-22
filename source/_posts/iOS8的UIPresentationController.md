@@ -2,6 +2,7 @@ title: iOS8的UIPresentationController
 date: 2014-10-25 16:23
 categories: iOS 
 ---
+![persentation](http://pic.kyfxbl.com/persentation.jpeg)
 从iOS8开始，controller之间的跳转特效，需要用新的API UIPresentationController来实现。
 <!--more-->
 
