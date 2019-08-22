@@ -2,7 +2,8 @@ title: 奇怪的js回调混乱
 date: 2014-12-11 01:13
 categories: javascript 
 ---
-今天发现一段代码，发生了奇怪的回调混乱现象
+![mudenggoudai](http://pic.kyfxbl.com/mudenggoudai.jpeg)
+今天发现一段js代码，发生了奇怪的回调现象，研究之后才知道……
 <!--more-->
 
 调用的API是这样的：

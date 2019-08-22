@@ -2,7 +2,8 @@ title: express配置session的几种场景
 date: 2014-11-22 00:28
 categories: javascript
 ---
-多个node实例同时运行的情况下，session的处理比单实例的场景更复杂，以2个node节点为例
+![session](http://pic.kyfxbl.com/session.jpeg)
+多个node实例同时运行的情况下，session的处理比单实例的场景更复杂，本文介绍多节点场景下，正确配置session的方式
 <!--more-->
 
 # 单一域名的场景

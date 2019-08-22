@@ -2,11 +2,10 @@ title: css实现平铺滚动效果
 date: 2014-11-13 15:12
 categories: web
 ---
-用css实现平铺滚动的效果
+![shuiping](http://pic.kyfxbl.com/shuiping.jpg)
+实现原生应用平铺滚动的效果，利用简单的CSS也可以做到
 <!--more-->
 
-效果：
-![](http://img.blog.csdn.net/20141113150541343)
 
 思路是在父容器上设置水平方向滚动，并禁止换行。然后子元素用inline-block实现平铺。关键CSS如下：
 

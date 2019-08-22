@@ -2,8 +2,11 @@ title: 用inline-block实现两列布局兼容移动端
 date: 2014-11-10 18:23
 categories: web 
 ---
-用inline-block实现两列布局是一种常见做法，不过需要处理手机浏览器的兼容性问题
+![twocolumn](http://pic.kyfxbl.com/twocolumn.jpg)
+一棵是柳树，另一棵还是柳树。。。
 <!--more-->
+
+用inline-block实现两列布局是一种常见做法，不过需要处理手机浏览器的兼容性问题
 
 下面这个DOM结构
 

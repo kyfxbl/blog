@@ -2,6 +2,7 @@ title: 使用ng-src代替src
 date: 2014-12-03 02:06
 categories: web
 ---
+![angular](http://pic.kyfxbl.com/angular.jpeg)
 今天调一个页面，碰巧开着console，偶然发现无效的http请求，提示404错误
 <!--more-->
 

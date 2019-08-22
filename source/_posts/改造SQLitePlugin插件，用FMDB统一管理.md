@@ -2,6 +2,7 @@ title: 改造SQLitePlugin插件，解决database locked问题
 date: 2014-12-17 20:52
 categories: iOS
 ---
+![fmdb](http://pic.kyfxbl.com/fmdb.jpeg)
 我们的是hybrid应用，基于cordova。做第一个版本的时候，原生代码用FMDB访问数据库，web部分用SQLitePlugin插件。早期原生代码和js访问数据库是错开的，所以没有发生问题。但是到了现在，有些场景需要2边一起访问数据库，由于sqlite不支持并发写，就产生了database locked问题。本文介绍解决的办法
 <!--more-->
 
