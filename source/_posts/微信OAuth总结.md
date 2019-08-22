@@ -2,6 +2,7 @@ title: 微信OAuth总结
 date: 2015-08-14 17:50:38
 categories: 微信开发
 ---
+![oauth](http://pic.kyfxbl.com/oauth.png)
 当用户从微信中打开网页时，基于微信提供的OAuth机制，可以获取到当前用户的基本信息，如昵称，头像等。这一能力是现在很多基于微信传播的网页的基础。本文总结这方面的一些心得技巧
 <!--more-->
 
@@ -69,7 +70,7 @@ user_id
 # 静默授权
 
 如果OAuth url串中，设置scope=snsapi_userinfo，则微信会提示用户授权，如下图
-![wx oauth](http://kypic.oss-cn-hangzhou.aliyuncs.com/wxoauth.jpg)
+![wx oauth](http://pic.kyfxbl.com/wxoauth.jpg)
 
 只有用户同意授权，跳转回来的链接才会携带code参数，后续才能获得用户的基本信息。某些特殊场景，可以使用“静默授权”，用户的体验是立刻跳转到业务页面，不会看到授权页面：
 1. 设置scope=snsapi_base，用户无感知，但是仅能获取到用户的open_id，无法获取其他信息
