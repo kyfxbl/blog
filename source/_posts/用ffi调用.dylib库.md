@@ -2,6 +2,7 @@ title: 用ffi调用.dylib库
 date: 2015-02-11 00:26
 categories: javascript 
 ---
+![dylib](http://pic.kyfxbl.com/dylib.jpeg)
 有一个特性需要调用第三方库libsync，在node.js里可以用ffi来实现
 <!--more-->
 

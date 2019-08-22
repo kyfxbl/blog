@@ -1,9 +1,12 @@
-title: iOS调用dismissViewController的陷阱
+title: iOS调用dismissViewController的细节
 date: 2014-12-17 23:30
 categories: iOS 
 ---
-我们的APP从启动到进入主页面，是通过presentViewController构造了一个ViewController序列，类似于首页 登陆页 启动加载页 主页面
+![dismissvc](http://pic.kyfxbl.com/dismissvc.jpeg)
+在ViewController队列的栈底调用dismissViewController时，会导致栈上每一个ViewController的viewDidAppear被依次调用。这个细节有时候会引发BUG
 <!--more-->
+
+我们的APP从启动到进入主页面，是通过presentViewController构造了一个ViewController序列，类似于首页 登陆页 启动加载页 主页面
 
 其中，在启动加载页的viewDidAppear方法里做了很多逻辑处理：
 

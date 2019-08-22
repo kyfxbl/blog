@@ -2,6 +2,7 @@ title: UITableView和UICollectionView的cell重用问题
 date: 2015-05-02 15:45
 categories: iOS 
 ---
+![cell](http://pic.kyfxbl.com/cell.jpeg)
 APP的一个页面用到了自定义的UITableViewCell，由于iOS框架的cell重用机制，遇到了一个BUG，总结一下
 <!--more-->
 

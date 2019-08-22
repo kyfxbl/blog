@@ -2,6 +2,7 @@ title: UIActionSheet和其他模态窗冲突的问题
 date: 2015-05-01 17:16
 categories: iOS 
 ---
+![actionsheet](http://pic.kyfxbl.com/actionsheet.jpeg)
 虽然iOS8引进了UIActionController，但是由于目前还需要兼容iOS7版本，所以还不能完全放弃UIActionSheet。而ActionSheet和其他模态窗有冲突，本文介绍解决的办法
 <!--more-->
 

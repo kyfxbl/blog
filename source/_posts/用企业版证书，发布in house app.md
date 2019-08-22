@@ -2,12 +2,13 @@ title: 用企业版证书，发布in house app
 date: 2015-02-07 23:31
 categories: iOS
 ---
+![inhouse](http://pic.kyfxbl.com/inhouse.jpeg)
 苹果企业版证书，虽然不能上app store，但是可以实现在网页上直接点击下载，而且不需要知道设备的UDID，合理使用的话还是很方便的。昨天用这种方式发布成功了，本文总结一下步骤
 <!--more-->
 
 首先，在xcode中export的时候，可以看到有3个选项：
 
-![](http://img.blog.csdn.net/20150207231411114?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/ih1.jpeg)
 
 第一个是提交到app store；第二个是打出IPA，然后就可以通过iTunes安装；第三个就是打出企业版的IPA，可以直接通过网页安装。这种发布方式也叫做in house
 
@@ -25,7 +26,7 @@ categories: iOS
 
 另一个是比较容易遗漏的地方，<span style="color:#ff0000">需要在Build Settings里配置Code Signing</span>
 
-![](http://img.blog.csdn.net/20150207232055155?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/ih2.jpeg)
 
 配置OK以后，就可以打出in house方式的IPA包了
 
