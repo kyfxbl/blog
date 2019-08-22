@@ -5,11 +5,7 @@ categories: android
 参考helloandroid兄的腾讯微博应用，我整理了一下
 <!--more-->
 
-完整项目在[原文](http://helloandroid.iteye.com/), 首先是效果图：
-
-![](http://dl.iteye.com/upload/attachment/533565/d7ef8d0f-5087-39bb-82da-74ac6374164a.jpg)
-
-梳理知识点总结如下： 
+完整项目在[原文](http://helloandroid.iteye.com/)，梳理知识点总结如下： 
 
 # TabActivity的使用
 
