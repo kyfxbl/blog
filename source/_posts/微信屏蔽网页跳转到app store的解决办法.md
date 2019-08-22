@@ -2,6 +2,7 @@ title: 微信屏蔽网页跳转到app store的解决办法
 date: 2015-06-19 19:28
 categories: 微信开发
 ---
+![myapp](http://pic.kyfxbl.com/myapp.jpeg)
 微信非常没节操地屏蔽了从网页跳转app store，本文介绍应对的方法
 <!--more-->
 

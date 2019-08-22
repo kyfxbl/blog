@@ -2,6 +2,7 @@ title: html5跨域方法
 date: 2015-06-13 21:50
 categories: web
 ---
+![crossdomain](http://pic.kyfxbl.com/crossdomain.jpeg)
 从html5开始，可以通过在响应头里增加Access-Control-Allow-Origin，实现跨域请求
 <!--more-->
 

@@ -2,6 +2,7 @@ title: NSDictionary判断key存在，且value非空
 date: 2015-03-22 17:12
 categories: iOS
 ---
+![nsdictionary](http://pic.kyfxbl.com/nsdictionary.jpg)
 这几天写一段数据迁移脚本，各种bug和闪退，定位以后发现大部分都是NSDictionary取key引发的错误
 <!--more-->
 

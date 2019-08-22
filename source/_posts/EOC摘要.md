@@ -1,7 +1,8 @@
 title: EOC摘要
 date: 2015-04-20 00:42
-categories: iOS
+categories: 读书笔记
 ---
+![eoc](http://pic.kyfxbl.com/eoc.jpeg)
 今天有事回老家，在动车上把EOC囫囵吞枣看完了，晚上回来摘要几条觉得比较重要的
 <!--more-->
 
