@@ -1,7 +1,8 @@
-title: app数据初始化和升级的设计思路
+title: app数据初始化设计思路
 date: 2014-05-14 23:06
 categories: iOS
 ---
+![init](http://pic.kyfxbl.com/init.jpg)
 对于把数据保存在本地的APP，会涉及到本地数据库初始化和升级的场景，本文总结一种设计思路
 <!--more-->
 

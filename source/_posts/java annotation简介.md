@@ -2,6 +2,7 @@ title: java annotation简介
 date: 2013-09-24 11:13
 categories: java 
 ---
+![annotation](http://pic.kyfxbl.com/annotation.jpg)
 开发中自定义annotation的场景不太多，但是很多框架的源码里都用到了自定义annotation，不了解的话就看不懂了，所以也简单地学习一下 
 <!--more-->
 

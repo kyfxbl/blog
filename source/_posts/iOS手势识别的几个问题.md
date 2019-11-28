@@ -2,6 +2,7 @@ title: iOS手势识别的几个问题
 date: 2014-07-01 17:07
 categories: iOS 
 ---
+![shoushi](http://pic.kyfxbl.com/shoushi.jpg)
 iOS手势识别的几个问题
 <!--more-->
 

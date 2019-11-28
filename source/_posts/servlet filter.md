@@ -7,7 +7,7 @@ struts2的实现核心是filter，本文简要描述filter相关的一些问题
  
 一般应用中如果用到了struts2，则会配置一系列action，不会配置servlet和servlet-mapping，但是struts2依然会匹配到正确的Action 
 
-奥秘在于struts2用一个filter过滤了所有匹配的请求（一般是*.action） 在这个filter中，struts2根据请求的URL，截取出actionName，在自己的配置文件中进行匹配，然后转发到合适的Action类进行处理 
+奥秘在于struts2用一个filter过滤了所有匹配的请求，在这个filter中，struts2根据请求的URL，截取出actionName，在自己的配置文件中进行匹配，然后转发到合适的Action类进行处理 
 
 关键在于，在这个filter里，没有依照常规，调用filterChain.doFilter()方法。也就是说，在struts2 filter后面的filter，以及servlet容器默认的filter，都没有执行的机会 下面贴一个简单的例子：
 ```

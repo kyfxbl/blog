@@ -2,12 +2,9 @@ title: 自定义UITextField
 date: 2014-06-24 17:15
 categories: iOS
 ---
-自定义UITextField
+![uitextfield](http://pic.kyfxbl.com/uitextfield.jpg)
+实现图中的效果
 <!--more-->
-
-目的是实现如下的效果：
-
-![](http://img.blog.csdn.net/20140624164556687)
 
 UITextField的leftView是自定义的UIView，其中：
 

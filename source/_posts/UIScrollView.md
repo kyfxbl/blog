@@ -2,6 +2,7 @@ title: UIScrollView
 date: 2014-07-12 21:51
 categories: iOS 
 ---
+![scroll](http://pic.kyfxbl.com/scroll.jpg)
 UIScrollView对滑动和缩放提供原生支持，API使用也非常方便，本文介绍一些相关知识
 <!--more-->
 
