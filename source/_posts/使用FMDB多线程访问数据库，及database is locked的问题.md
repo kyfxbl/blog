@@ -2,6 +2,7 @@ title: 使用FMDB多线程访问数据库，及database is locked的问题
 date: 2014-07-25 18:38
 categories: iOS
 ---
+![fmdblock](http://pic.kyfxbl.com/fmdblock.jpeg)
 今天终于通过FMDatabaseQueue解决了多线程同时访问数据库时，数据库锁定的问题，错误信息是：Unknown error finalizing or resetting statement (5: database is locked)，本文总结一下：
 <!--more-->
 

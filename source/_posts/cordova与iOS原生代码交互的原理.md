@@ -2,6 +2,7 @@ title: cordova与iOS原生代码交互的原理
 date: 2014-08-06 18:00
 categories: iOS
 ---
+![cordova](http://pic.kyfxbl.com/cordova.jpg)
 本文简要介绍cordova实现javascript代码和iOS原生代码交互的原理
 <!--more-->
 

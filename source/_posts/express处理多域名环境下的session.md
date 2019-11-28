@@ -2,6 +2,7 @@ title: express处理多域名环境下的session
 date: 2014-10-12 15:06
 categories: javascript  
 ---
+![session](http://pic.kyfxbl.com/session.jpg)
 微站子系统上线以后，我们有2个域名，分别是www和wx。测试发现，当页面交替请求这2个域名下的资源和服务时，会造成session反复切换，于是依赖session的一些方案都失效了
 <!--more-->
 

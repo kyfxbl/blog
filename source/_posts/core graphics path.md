@@ -2,6 +2,7 @@ title: core graphics path
 date: 2014-07-13 11:57
 categories: iOS 
 ---
+![cgpath](http://pic.kyfxbl.com/cgpath.jpg)
 当UIKit无法满足绘图需求的时候，就需要用到Core Graphics API，其中最普遍的就是path
 <!--more-->
 

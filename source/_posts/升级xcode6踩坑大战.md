@@ -2,6 +2,7 @@ title: 升级xcode6踩坑大战
 date: 2014-10-15 23:07
 categories: iOS
 ---
+![hole](http://pic.kyfxbl.com/hole.jpg)
 昨天升级到xcode6，踩了几个坑，主要是link的时候各种Undefined symbols for architecture。把遇到的问题总结一下
 <!--more-->
 

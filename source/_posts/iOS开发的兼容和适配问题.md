@@ -2,6 +2,7 @@ title: iOS开发的兼容和适配问题
 date: 2014-10-20 23:47
 categories: iOS
 ---
+![iOScap](http://pic.kyfxbl.com/iOScap.jpg)
 由于苹果公司的霸道作风，每个iOS开发者都会面对不同设备和版本的兼容问题。基本上升级一次xcode鸡飞狗跳是非常正常的，稍微总结一下需要注意的几个方面
 <!--more-->
 
