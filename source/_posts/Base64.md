@@ -2,6 +2,7 @@ title: Base64
 date: 2013-09-24 11:25
 categories: 其它
 ---
+![base64](http://pic.kyfxbl.com/base64.jpg)
 Base64编码介绍
 <!--more-->
 
