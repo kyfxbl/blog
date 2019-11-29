@@ -2,7 +2,8 @@ title: httpd设置反向代理
 date: 2013-09-24 11:25
 categories: web 
 ---
-用httpd可以实现反向代理Reverse Proxy 
+![httpd](http://pic.kyfxbl.com/httpd.jpg)
+用httpd实现反向代理 
 <!--more-->
 
 官网的说明： 

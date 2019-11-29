@@ -2,6 +2,7 @@ title: css笔记
 date: 2014-04-24 21:23
 categories: web 
 ---
+![css](http://pic.kyfxbl.com/css.jpeg)
 css的一些学习笔记
 <!--more-->
 

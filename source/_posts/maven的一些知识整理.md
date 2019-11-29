@@ -2,6 +2,7 @@ title: maven的一些知识整理
 date: 2013-09-24 11:11
 categories: java 
 ---
+![maven](http://pic.kyfxbl.com/maven.jpg)
 总结一些maven的细节知识
 <!--more-->
 

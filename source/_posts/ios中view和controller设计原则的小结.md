@@ -2,6 +2,7 @@ title: ios中view和controller设计原则的小结
 date: 2014-02-21 13:34
 categories: iOS 
 ---
+![uiview](http://pic.kyfxbl.com/uiview.jpg)
 针对UIView和UIViewController的设计原则，当前个人的一些思考
 <!--more-->
 

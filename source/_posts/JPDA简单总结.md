@@ -2,6 +2,7 @@ title: JPDA简单总结
 date: 2013-09-24 11:13
 categories: java 
 ---
+![jpda](http://pic.kyfxbl.com/jpda.jpg)
 我们平时经常使用的debug功能，其实背后大有文章。本文简要介绍JPDA
 <!--more-->
 

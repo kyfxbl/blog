@@ -2,6 +2,7 @@ title: JAVA类的初始化过程
 date: 2013-09-24 10:58
 categories: java 
 ---
+![fudan](http://pic.kyfxbl.com/fudan.jpg)
 java中一个类初始化的过程
 <!--more-->
 

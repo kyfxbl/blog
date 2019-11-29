@@ -2,10 +2,9 @@ title: http协议简单总结
 date: 2013-09-24 11:06
 categories: web 
 ---
+![http](http://pic.kyfxbl.com/http.jpeg)
 http小总结
 <!--more-->
-
-本文大量参考[http](http://zsxxsz.iteye.com/blog/568250)，对原作者表示感谢 
 
 # 协议层次 
 

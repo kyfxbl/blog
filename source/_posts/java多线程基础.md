@@ -2,6 +2,7 @@ title: java多线程基础
 date: 2013-09-24 11:22
 categories: java 
 ---
+![duoxiancheng](http://pic.kyfxbl.com/duoxiancheng.jpg)
 以前看过一段时间java多线程，很久没用到，忘记了。最近又遇到了一些多线程的问题，重新查了些资料，再提炼一下。本文不涉及java.util.concurrent包里的API 
 <!--more-->
 

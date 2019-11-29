@@ -2,6 +2,7 @@ title: JAVA内存区域
 date: 2013-09-24 10:56
 categories: java 
 ---
+![neicun](http://pic.kyfxbl.com/neicun.jpg)
 最近开始学习JVM，在此把学习中的体会记录下来。资料主要来源是《深入理解JAVA虚拟机》这本书，以及一些网上找的其他资料。目标JVM是HotSpot
 <!--more-->
 

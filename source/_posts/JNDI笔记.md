@@ -2,6 +2,7 @@ title: JNDI笔记
 date: 2013-09-24 10:31
 categories: java 
 ---
+![jndi](http://pic.kyfxbl.com/jndi.jpg)
 JNDI服务是web容器提供的服务。web应用可以通过JNDI服务从容器中得到各种组件（包括但不限于数据源），实现各组件的解耦
 <!--more-->
 

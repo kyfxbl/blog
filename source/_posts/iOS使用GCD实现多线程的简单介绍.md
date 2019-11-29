@@ -2,6 +2,7 @@ title: iOS使用GCD实现多线程的简单介绍
 date: 2013-12-20 16:10
 categories: iOS 
 ---
+![gcd](http://pic.kyfxbl.com/gcd.jpg)
 应用有一个简单的需求，即在后台做文件下载等一系列操作，过程中在主页面刷新进度条，全部完成后弹出对话框提示用户
 <!--more-->
 
