@@ -1,7 +1,8 @@
-title: tomcat源码阅读（二）——ClassLoader及catalina启动
-date: 2013-09-24 11:24
+title: tomcat源码阅读2——ClassLoader及catalina启动
+date: 2013-09-24 11:25
 categories: 源码阅读 
 ---
+![tomcat](http://pic.kyfxbl.com/tomcat.jpeg)
 本系列是阅读tomcat源码的总结。本文介绍tomcat中的classloader体系
 <!--more-->
 

@@ -2,6 +2,7 @@ title: struts2细节汇总
 date: 2013-09-24 11:11
 categories: java 
 ---
+![struts2](http://pic.kyfxbl.com/struts2.jpeg)
 本文总结一些struts2的细节问题
 <!--more-->
 

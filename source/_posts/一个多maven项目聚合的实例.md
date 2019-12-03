@@ -2,6 +2,7 @@ title: 一个多maven项目聚合的实例
 date: 2013-09-24 11:12
 categories: java 
 ---
+![maven](http://pic.kyfxbl.com/maven.jpg)
 本文介绍一个多maven项目的实例demo，展示了聚合、继承、工程依赖、单元测试、多war聚合、cargo发布等场景 
 <!--more-->
 

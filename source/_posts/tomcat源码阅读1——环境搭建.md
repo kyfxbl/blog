@@ -1,7 +1,8 @@
-title: tomcat源码阅读（一）——环境搭建
-date: 2013-09-24 11:23
+title: tomcat源码阅读1——环境搭建
+date: 2013-09-24 11:25
 categories: 源码阅读 
 ---
+![tomcat](http://pic.kyfxbl.com/tomcat.jpeg)
 本系列是阅读tomcat源码的总结。本文介绍如何搭建阅读源码的环境
 <!--more-->
 

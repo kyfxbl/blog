@@ -2,6 +2,7 @@ title: seajs入门
 date: 2013-10-14 23:21
 categories: javascript 
 ---
+![seajsintro](http://pic.kyfxbl.com/seajsintro.jpeg)
 seajs使用简介
 <!--more-->
 
@@ -25,7 +26,7 @@ seajs使用简介
 
 目录结构简化后是这样的：
 
-![](http://img.blog.csdn.net/20131014224034015?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/seajse1.png)
 
 以下是代码：
 

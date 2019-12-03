@@ -2,6 +2,7 @@ title: nginx与iOS实现https双向认证
 date: 2014-05-13 15:35
 categories: iOS 
 ---
+![httpsios](http://pic.kyfxbl.com/httpsios.jpeg)
 iOS下实现与nginx服务器的https双向认证
 <!--more-->
 

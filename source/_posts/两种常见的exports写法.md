@@ -2,6 +2,7 @@ title: 两种常见的exports写法
 date: 2014-02-18 15:15
 categories: javascript
 ---
+![export](http://pic.kyfxbl.com/export.jpeg)
 要在node中导出一个模块，一种写法是直接导出一个object，function作为exports的属性；另一种是导出一个function作为构造函数，真正想导出的function写在prototype上。本文介绍2种写法的区别
 <!--more-->
 

@@ -2,6 +2,7 @@ title: node的模块加载与管理
 date: 2013-10-22 17:16
 categories: javascript 
 ---
+![export](http://pic.kyfxbl.com/export.jpeg)
 node模块管理的总结
 <!--more-->
 
@@ -29,7 +30,7 @@ node实现了CommonJS的模块规范和包结构规范
 
 实际上，即使不遵循包结构规范，比如没有package.json，js文件之间相互引用也是可以的，比如：
 
-![](http://img.blog.csdn.net/20131022163605250?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/nodemodule1.png)
 
 这里只有一个单独的calculator.js，显然谈不上什么包结构，但是这个模块也完全可以被其他模块引用
 
@@ -45,7 +46,7 @@ console.log(sum);
 
 一个典型的node module，通常是一个单独的目录，放在node\_modules下。目录下有lib，bin等子目录，以及package.json描述文件，比如：
 
-![](http://img.blog.csdn.net/20131022164410937?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/nodemodule2.png)
 
 package.json是核心，其中描述了该模块的入口，模块依赖的模块等。用npm install命令，可以自动读取分析package.json中描述的依赖，并安装到本地仓库（放在node\_modules下）
 
@@ -65,7 +66,7 @@ package.json是核心，其中描述了该模块的入口，模块依赖的模�
 
 如下目录
 
-![](http://img.blog.csdn.net/20131022165452015?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/nodemodule3.png)
 
 在test\_npm中，是这样引用test模块的：
 
@@ -74,7 +75,7 @@ var test = require("test");
 ```
 这行代码执行不能成功，需要先执行npm install test，把test安装到本地仓库
 
-![](http://img.blog.csdn.net/20131022165804312?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/nodemodule4.png)
 
 其实除非是为了将自己开发的模块发布到npm registry或是npm source上，<span style="color:#ff0000">一般没必要安装本地模块</span>，因为可以通过相对路径或者绝对路径加载到
 

@@ -1,7 +1,8 @@
-title: tomcat源码阅读（三）——ClassLoader背景知识
+title: tomcat源码阅读3——ClassLoader背景知识
 date: 2013-09-24 11:25
 categories: 源码阅读 
 ---
+![tomcat](http://pic.kyfxbl.com/tomcat.jpeg)
 本系列是阅读tomcat源码的总结。本文介绍classloader的背景知识，tomcat用到很多ClassLoader相关的代码，如果缺乏这方面的背景知识，阅读源码会遇到很多障碍，所以本文首先总结一下这方面的内容，和tomcat源码的关系不大
 <!--more-->
 

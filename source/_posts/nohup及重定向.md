@@ -2,7 +2,8 @@ title: nohup及重定向
 date: 2014-03-21 20:33
 categories: linux
 ---
-nohup的用法
+![nohups](http://pic.kyfxbl.com/nohups.jpeg)
+如果你正在运行一个进程，而且你觉得在退出帐户时该进程还不会结束，那么可以使用nohup命令。该命令可以在你关闭终端之后继续运行相应的进程
 <!--more-->
 
 # 保持进程

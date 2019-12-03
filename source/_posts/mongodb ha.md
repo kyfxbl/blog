@@ -1,7 +1,8 @@
-title: mongodb利用rs，实现ha和备份
+title: mongodb ha
 date: 2013-10-01 15:14
 categories: database 
 ---
+![mongodb](http://pic.kyfxbl.com/mongodb.jpeg)
 mongodb最简单的部署方式，是单节点部署，但是单节点部署有些问题，第一是无法做HA，如果该mongod down掉，或者部署的server down掉，应用就无法工作；第二是不利于备份，因为在备份的时候，会给mongod额外的负担，有可能影响业务；第三是无法做读写分离。所以在生产环境下，应该优先考虑集群部署
 <!--more-->
 
@@ -19,7 +20,7 @@ master-slave可以解决备份的问题，但是无法透明地HA，所以也不
 
 基本上采用官网推荐的这种TOPO：
 
-![](http://img.blog.csdn.net/20131001142634968?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/mongo1.png)
 
 理想情况下，最好是3个mongod实例分别部署在单独的server上，这样就需要3台server；出于成本考虑，也可以把2台secondary部署在同一台server上，primary由于要处理读写请求（读写暂不分离），需要很多内存，并且考虑HA因素，所以primary是需要保证独占一台server比较好，这样就一共需要2台server
 
@@ -63,7 +64,7 @@ rs.status()
 ```
 应该能看到类似下图的效果
 
-![](http://img.blog.csdn.net/20131001144337187?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/mongo2.png)
 
 # 验证HA场景
 
@@ -104,11 +105,13 @@ public static void main(String[] args) throws UnknownHostException {
 ```
 每隔1秒往集群中写入一条数据，然后手动把primary shutdown，观察发现jvm console给出提示：
 
+```
 警告: Primary switching from zhengshengdong-K43SA/127.0.0.1:2222 to mongodb.kyfxbl.net/127.0.0.1:4444
+```
 
 这条消息说明，mongo自动处理了primary的切换，对于应用来说是透明的。然后查看mongo中的记录，发现在切换完成以后，写入操作确实继续了
 
-![](http://img.blog.csdn.net/20131001145402625?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva3lmeGJs/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](http://pic.kyfxbl.com/mongo3.png)
 
 上图可以看到，在2926和2931之间，正在进行primary倒换，在完成之后，应用可以继续写入数据
 
@@ -154,23 +157,22 @@ at com.mongodb.DBTCPConnector.say(DBTCPConnector.java:142)
 ```
 Runnable task = new Runnable() {
 
-			private int i = 0;
+	private int i = 0;
 
-			@Override
-			public void run() {
-				DB db = client.getDB("yilos");
-				DBCollection collection = db.getCollection("test");
-				DBObject o = new BasicDBObject("name", "MongoDB" + i).append(
-						"count", i);
-				try {
-					collection.insert(o);
-				} catch (Exception exc) {
-					exc.printStackTrace();
-				}
+	@Override
+	public void run() {
+		DB db = client.getDB("yilos");
+		DBCollection collection = db.getCollection("test");
+		DBObject o = new BasicDBObject("name", "MongoDB" + i).append("count", i);
+		try {
+			collection.insert(o);
+		} catch (Exception exc) {
+			exc.printStackTrace();
+		}
 
-				i++;
-			}
-		};
+		i++;
+	}
+};
 ```
 问题就出在这里，try语句中捕获到了MongoException，但是我写的这段代码并没有进行处理，只是简单地打印出异常，然后把i自增后，进入下一次循环。
 
