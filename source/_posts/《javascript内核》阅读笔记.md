@@ -2,7 +2,8 @@ title: 《javascript内核》阅读笔记
 date: 2013-09-24 10:31
 categories: 读书笔记
 ---
-本文是阅读《javascript内核》的笔记总结。原系列文章在iteye上
+![jscore](http://pic.kyfxbl.com/jscore.jpg)
+本文是阅读《javascript内核》的笔记总结
 <!--more-->
 
 原文见[javascript core](http://abruzzi.iteye.com/)

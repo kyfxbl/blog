@@ -1,5 +1,5 @@
 title: JAVA内存区域
-date: 2013-09-24 10:56
+date: 2013-09-23 10:56
 categories: java 
 ---
 ![neicun](http://pic.kyfxbl.com/neicun.jpg)

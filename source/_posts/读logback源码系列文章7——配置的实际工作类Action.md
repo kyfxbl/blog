@@ -1,7 +1,8 @@
-title: 读logback源码系列文章（七）——配置的实际工作类Action
-date: 2013-09-24 10:57
+title: 读logback源码系列文章7——配置的实际工作类Action
+date: 2013-09-24 10:52
 categories: 源码阅读
 ---
+![logback](http://pic.kyfxbl.com/logback.jpg)
 本系列是阅读logback源码的总结。本文介绍Action组件是如何进行配置的实际工作的
 <!--more-->
 

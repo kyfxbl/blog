@@ -2,6 +2,7 @@ title: 用nexus搭建maven私服
 date: 2013-09-24 11:12
 categories: java 
 ---
+![nexus](http://pic.kyfxbl.com/nexus.png)
 首先介绍一下背景，前公司访问外网有限制，项目组大部分人员不能访问maven的central repository，因此在局域网里找一台有外网权限的机器，搭建nexus私服，然后开发人员连到这台私服上。本文总结一下搭建过程
 <!--more-->
 

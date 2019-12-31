@@ -1,7 +1,8 @@
-title: 小读spring ioc源码（二）——ContextLoaderListener
+title: 小读spring ioc源码2——ContextLoaderListener
 date: 2013-09-24 11:05
 categories: 源码阅读  
 ---
+![spring](http://pic.kyfxbl.com/spring.png)
 web应用中，spring的启动过程
 <!--more-->
 

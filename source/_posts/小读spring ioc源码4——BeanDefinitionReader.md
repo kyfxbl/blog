@@ -1,7 +1,8 @@
-title: 小读spring ioc源码（四）——BeanDefinitionReader
-date: 2013-09-24 11:06
+title: 小读spring ioc源码4——BeanDefinitionReader
+date: 2013-09-24 11:05
 categories: 源码阅读 
 ---
+![spring](http://pic.kyfxbl.com/spring.png)
 上一篇博客说到，ApplicationContext将解析BeanDefinition的工作委托给BeanDefinitionReader组件，这篇就接着分析一下BeanDefinition的解析过程
 <!--more-->
 

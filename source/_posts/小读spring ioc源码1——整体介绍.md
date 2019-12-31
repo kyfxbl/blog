@@ -1,7 +1,8 @@
-title: 小读spring ioc源码（一）——整体介绍
+title: 小读spring ioc源码1——整体介绍
 date: 2013-09-24 11:05
 categories: 源码阅读 
 ---
+![spring](http://pic.kyfxbl.com/spring.png)
 最近在读spring ioc的源码，用EA画了几张比较清楚的类图，不过由于SPRING的类继承体系比较复杂，图实在太大了，很难截图贴上来，所以只能用文字叙述了
 <!--more-->
 

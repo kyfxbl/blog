@@ -1,7 +1,8 @@
-title: 读logback源码系列文章（三）——创建Logger
-date: 2013-09-24 10:57
+title: 读logback源码系列文章3——创建Logger
+date: 2013-09-24 10:56
 categories: 源码阅读
 ---
+![logback](http://pic.kyfxbl.com/logback.jpg)
 本系列是阅读logback源码的总结。本文介绍logback如何创建日志框架真正的核心类Logger
 <!--more-->
 

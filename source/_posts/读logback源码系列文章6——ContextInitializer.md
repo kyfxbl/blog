@@ -1,7 +1,8 @@
-title: 读logback源码系列文章（六）——ContextInitializer
-date: 2013-09-24 10:57
+title: 读logback源码系列文章6——ContextInitializer
+date: 2013-09-24 10:53
 categories: 源码阅读
 ---
+![logback](http://pic.kyfxbl.com/logback.jpg)
 本系列是阅读logback源码的总结。本文介绍logback是怎么读取配置文件并初始化整个框架的
 <!--more-->
 

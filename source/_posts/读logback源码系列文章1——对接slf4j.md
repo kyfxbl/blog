@@ -1,7 +1,8 @@
-title: 读logback源码系列文章（一）——对接slf4j
-date: 2013-09-24 10:34
+title: 读logback源码系列文章1——对接slf4j
+date: 2013-09-24 10:58
 categories: 源码阅读
 ---
+![logback](http://pic.kyfxbl.com/logback.jpg)
 本系列是阅读logback源码的总结。本文介绍logback如何对接slf4j
 <!--more-->
 

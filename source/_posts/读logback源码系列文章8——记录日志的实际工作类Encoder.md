@@ -1,7 +1,8 @@
-title: 读logback源码系列文章（八）——记录日志的实际工作类Encoder
-date: 2013-09-24 10:57
+title: 读logback源码系列文章8——记录日志的实际工作类Encoder
+date: 2013-09-24 10:51
 categories: 源码阅读
 ---
+![logback](http://pic.kyfxbl.com/logback.jpg)
 本系列是阅读logback源码的总结。本文介绍一下实际记录日志的类Encoder
 <!--more-->
 

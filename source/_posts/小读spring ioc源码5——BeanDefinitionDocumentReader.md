@@ -1,7 +1,8 @@
-title: 小读spring ioc源码（五）——BeanDefinitionDocumentReader
-date: 2013-09-24 11:06
+title: 小读spring ioc源码5——BeanDefinitionDocumentReader
+date: 2013-09-24 11:04
 categories: 源码阅读 
 ---
+![spring](http://pic.kyfxbl.com/spring.png)
 上一篇博客说到，BeanDefinition的解析，已经走到了DefaultBeanDefinitionDocumentReader里，这时候配置文件已经被加载，并解析成w3c的Document对象。 这篇博客就接着介绍，DefaultBeanDefinitionDocumentReader和BeanDefinitionParserDelegate类，是怎么协同完成bean的解析和注册的
 <!--more-->
 

@@ -1,7 +1,8 @@
-title: 小读spring ioc源码（三）——XmlWebApplicationContext初始化的整体过程
+title: 小读spring ioc源码3——XmlWebApplicationContext初始化的整体过程
 date: 2013-09-24 11:05
 categories: 源码阅读 
 ---
+![spring](http://pic.kyfxbl.com/spring.png)
 上一篇说到，ContextLoaderListener在web应用启动之后，经过一系列前置步骤，将初始化XmlWebApplicationContext的工作，委托给AbstractApplicationContext。这篇就继续介绍一下，是怎样一步步完成配置文件的加载、解析、注册的 
 <!--more-->
 

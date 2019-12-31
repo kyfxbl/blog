@@ -1,7 +1,8 @@
-title: 读logback源码系列文章（五）——Appender
-date: 2013-09-24 10:57
+title: 读logback源码系列文章5——Appender
+date: 2013-09-24 10:54
 categories: 源码阅读
 ---
+![logback](http://pic.kyfxbl.com/logback.jpg)
 本系列是阅读logback源码的总结。本文介绍Appender组件是怎么记录日志的
 <!--more-->
 

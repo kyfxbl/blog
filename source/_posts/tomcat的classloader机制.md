@@ -2,6 +2,7 @@ title: tomcat的classloader机制
 date: 2013-09-24 11:13
 categories: java 
 ---
+![classloader](http://pic.kyfxbl.com/classloader.png)
 tomcat的classloader机制分析
 <!--more-->
 
