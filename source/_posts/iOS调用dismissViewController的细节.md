@@ -2,7 +2,7 @@ title: iOS调用dismissViewController的细节
 date: 2014-12-17 23:30
 categories: iOS 
 ---
-![dismissvc](http://pic.kyfxbl.com/dismissvc.jpeg)
+![dismissvc](http://pic.kyfxbl.com/a22.jpg)
 在ViewController队列的栈底调用dismissViewController时，会导致栈上每一个ViewController的viewDidAppear被依次调用。这个细节有时候会引发BUG
 <!--more-->
 

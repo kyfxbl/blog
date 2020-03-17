@@ -1,4 +1,4 @@
-title: ios中view和controller设计原则的小结
+title: iOS中view和controller设计原则的小结
 date: 2014-02-21 13:34
 categories: iOS 
 ---

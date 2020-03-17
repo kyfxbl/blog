@@ -2,7 +2,7 @@ title: GCD嵌套异步回调
 date: 2014-06-17 16:21
 categories: iOS
 ---
-![wunai](http://pic.kyfxbl.com/wunai.jpg)
+![wunai](http://pic.kyfxbl.com/a31.jpg)
 今天被嵌套异步回调的问题纠结了2个小时
 <!--more-->
 

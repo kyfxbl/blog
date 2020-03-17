@@ -2,7 +2,7 @@ title: javascript代理模式和代码织入
 date: 2014-02-23 21:01
 categories: javascript 
 ---
-![weaver](http://pic.kyfxbl.com/weaver.jpeg)
+![weaver](http://pic.kyfxbl.com/a32.jpg)
 我们的产品有多个客户端，包括web客户端和终端客户端，源码都是一段js在数据库中查找记录。但是web客户端和终端的逻辑有些不同。终端只要直接从本地sqlite数据库中查询，而web需要先到server查询，然后插入web sql，最后从本地web sql中取出。昨天看到同事写的一段代码很巧妙
 <!--more-->
 

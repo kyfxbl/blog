@@ -2,7 +2,7 @@ title: javascript几个知识点
 date: 2015-08-20 11:31:18
 categories: javascript
 ---
-![javascript](http://pic.kyfxbl.com/javascript.jpg)
+![javascript](http://pic.kyfxbl.com/a11.jpg)
 本文总结一下javascript几个比较重要的知识点，包括scope chain，this，和函数的一些高级特性
 <!--more-->
 

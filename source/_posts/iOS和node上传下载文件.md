@@ -2,7 +2,7 @@ title: iOS和node上传下载文件
 date: 2014-01-21 23:51
 categories: iOS
 ---
-![xunlei](http://pic.kyfxbl.com/xunlei.jpg)
+![xunlei](http://pic.kyfxbl.com/a34.jpg)
 上传和下载需要server和client互相配合。同样的客户端代码，可能在servlet里能成功，换成node就不行；反过来也是一样。因为不同的服务端，对http请求的处理可能不同。本文介绍的是服务端使用node，客户端使用NSURLSession的情况
 <!--more-->
 

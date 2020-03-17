@@ -2,7 +2,7 @@ title: global variable in node
 date: 2013-10-10 23:28
 categories: javascript 
 ---
-![global](http://pic.kyfxbl.com/global.jpeg)
+![global](http://pic.kyfxbl.com/a35.jpg)
 node.js中的global和module.exports
 <!--more-->
 

@@ -1,4 +1,4 @@
-title: java多线程基础
+title: JAVA多线程基础
 date: 2013-09-24 11:22
 categories: java 
 ---

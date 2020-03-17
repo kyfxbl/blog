@@ -2,7 +2,7 @@ title: 优化TableView索引排序的性能
 date: 2014-07-24 19:42
 categories: iOS
 ---
-![index1](http://pic.kyfxbl.com/index1.jpg)
+![index1](http://pic.kyfxbl.com/a28.jpg)
 app中的一个TableView，使用原生的UILocalizedIndexedCollation进行索引排序（A-Z），实测速度很慢，400多条数据需要3秒多才能显示出来，本文介绍优化的思路
 <!--more-->
 

@@ -2,7 +2,7 @@ title: 使用webview的场景
 date: 2015-04-19 23:30
 categories: iOS 
 ---
-![hybrid](http://pic.kyfxbl.com/hybrid.jpeg)
+![hybrid](http://pic.kyfxbl.com/a17.jpg)
 本文讨论在app中适合使用webview的场景
 <!--more-->
 

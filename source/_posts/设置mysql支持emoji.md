@@ -2,7 +2,7 @@ title: 设置mysql支持emoji
 date: 2015-06-29 18:22
 categories: database
 ---
-![emoji](http://pic.kyfxbl.com/emoji.png)
+![emoji](http://pic.kyfxbl.com/a14.jpg)
 emoji在诞生之初有多种标准，所以早期兼容性是个问题。但是现在已经标准化了，是unicode的一部分。可以认为，跟字母、汉字一样，emoji就是unicode中一个普通的字符。本文介绍让mysql支持emoji的方法
 <!--more-->
 

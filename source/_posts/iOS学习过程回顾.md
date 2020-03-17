@@ -2,7 +2,7 @@ title: iOS学习过程回顾
 date: 2015-04-26 02:06
 categories: iOS
 ---
-![xuexi](http://pic.kyfxbl.com/xuexi.jpeg)
+![xuexi](http://pic.kyfxbl.com/a16.jpg)
 从2013年12月至今，差不多做了1年半iOS开发，回顾一下学习的过程
 <!--more-->
 

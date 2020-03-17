@@ -2,7 +2,7 @@ title: 用rdiff拆分合并文件
 date: 2015-03-22 16:41
 categories: 方案 
 ---
-![rdiff](http://pic.kyfxbl.com/rdiff.jpeg)
+![rdiff](http://pic.kyfxbl.com/a18.jpg)
 我们的一个方案是基于文件做多端数据同步，如何正确、高效地同步文件是基础的保障，本文介绍一下我们的方案
 <!--more-->
 

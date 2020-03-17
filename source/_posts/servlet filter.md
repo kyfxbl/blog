@@ -2,7 +2,7 @@ title: servlet filter
 date: 2013-09-24 11:24
 categories: java
 ---
-![filter](http://pic.kyfxbl.com/filter.jpeg)
+![filter](http://pic.kyfxbl.com/a38.jpg)
 struts2的实现核心是filter，本文简要描述filter相关的一些问题
 <!--more-->
  

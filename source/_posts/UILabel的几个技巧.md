@@ -2,7 +2,7 @@ title: UILabel的几个技巧
 date: 2015-05-18 17:27
 categories: iOS 
 ---
-![radius](http://pic.kyfxbl.com/radius.jpeg)
+![radius](http://pic.kyfxbl.com/a15.jpg)
 在iOS8绘制圆角，以及正确地消除UILabel的黑边
 <!--more-->
 

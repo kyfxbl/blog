@@ -2,7 +2,7 @@ title: 微信OAuth总结
 date: 2015-08-14 17:50:38
 categories: 微信开发
 ---
-![oauth](http://pic.kyfxbl.com/oauth.png)
+![oauth](http://pic.kyfxbl.com/a12.jpg)
 当用户从微信中打开网页时，基于微信提供的OAuth机制，可以获取到当前用户的基本信息，如昵称，头像等。这一能力是现在很多基于微信传播的网页的基础。本文总结这方面的一些心得技巧
 <!--more-->
 

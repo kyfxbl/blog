@@ -2,7 +2,7 @@ title: chrome extensions
 date: 2013-09-24 11:22
 categories: 其它 
 ---
-![chrome](http://pic.kyfxbl.com/chrome.png)
+![chrome](http://pic.kyfxbl.com/a40.jpg)
 chrome的扩展（extensions），和插件（plugins）相比，能做的事情是比较有限的
 <!--more-->
 

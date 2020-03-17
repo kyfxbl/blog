@@ -2,7 +2,7 @@ title: https交叉证书
 date: 2015-03-22 16:18
 categories: iOS
 ---
-![chunanzheng](http://pic.kyfxbl.com/chunanzheng.jpeg)
+![chunanzheng](http://pic.kyfxbl.com/a19.jpg)
 为了发布苹果企业版ipa，我们在godaddy上申请了SSL证书。部署之后发现，在PC/Mac平台的各浏览器上都可以正常通过https协议访问，但是在iPad的Safari上就会报错。还需要部署交叉证书，才能支持移动端浏览器
 <!--more-->
 

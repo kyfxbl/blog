@@ -1,4 +1,4 @@
-title: 用ffi调用.dylib库
+title: 用ffi调用dylib库
 date: 2015-02-11 00:26
 categories: javascript 
 ---

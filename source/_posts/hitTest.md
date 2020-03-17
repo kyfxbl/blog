@@ -2,7 +2,7 @@ title: hitTest
 date: 2015-12-27 15:48:08
 categories: iOS
 ---
-![hittest2](http://pic.kyfxbl.com/hittest2.jpeg)
+![hittest2](http://pic.kyfxbl.com/a4.jpg)
 hitTest方法，简而言之，就是给定一个点，返回一个view或layer，判定当前是哪一个view或layer被点中了
 <!--more-->
 

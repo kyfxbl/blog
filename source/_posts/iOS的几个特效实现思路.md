@@ -2,7 +2,7 @@ title: iOS的几个特效实现思路
 date: 2016-02-06 21:27:04
 categories: iOS
 ---
-![rainbow](http://pic.kyfxbl.com/rainbow.jpeg)
+![rainbow](http://pic.kyfxbl.com/a1.jpg)
 最近看一个app的源码，发现基本没有用第三方的开源组件，但是特效也做得不错，总结一下实现的思路
 <!--more-->
 

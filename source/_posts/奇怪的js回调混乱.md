@@ -2,7 +2,7 @@ title: 奇怪的js回调混乱
 date: 2014-12-11 01:13
 categories: javascript 
 ---
-![mudenggoudai](http://pic.kyfxbl.com/mudenggoudai.jpeg)
+![mudenggoudai](http://pic.kyfxbl.com/a23.jpg)
 今天发现一段js代码，发生了奇怪的回调现象，研究之后才知道……
 <!--more-->
 

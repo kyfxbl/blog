@@ -1,4 +1,4 @@
-title: 用企业版证书，发布in house app
+title: 用企业版证书发布in house app
 date: 2015-02-07 23:31
 categories: iOS
 ---

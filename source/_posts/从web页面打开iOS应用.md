@@ -2,7 +2,7 @@ title: 从web页面打开iOS应用
 date: 2015-10-21 17:56:58
 categories: iOS
 ---
-![itunes](http://pic.kyfxbl.com/itunes.jpeg)
+![itunes](http://pic.kyfxbl.com/a7.jpg)
 本文介绍从web页面打开iOS app的方法
 <!--more-->
 

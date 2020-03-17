@@ -2,7 +2,7 @@ title: 对JAVAEE规范的理解
 date: 2013-09-24 11:06
 categories: java
 ---
-![javaspe](http://pic.kyfxbl.com/javaspe.jpeg)
+![javaspe](http://pic.kyfxbl.com/a44.jpg)
 本文总结对javaee，规范的理解。包括：什么是java ee，各种规范的接口的jar包（及源码）怎么获取，各种规范的实现的jar包（及源码）怎么获取
 <!--more-->
 
