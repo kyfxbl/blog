@@ -22,7 +22,7 @@ JAVA EE是由一系列规范组成的，规范是由JCP制定的，并且提供�
 
 然后实现规范的产商，基于这个jar包开发各自的实现；而规范的使用者，也基于这个jar包调用。这样可以保证接口和实现的分离 
 
-不过事实上，好像不是这样的。很多规范的接口jar包，我在www.jcp.org、www.java.net、www.oracle.com上，都找不到下载的链接
+不过事实上，好像不是这样的。很多规范的接口jar包，我在`www.jcp.org`、`www.java.net`、`www.oracle.com`上，都找不到下载的链接
 
 有人说是因为从sun把java卖给oracle之后，oracle关闭了很多项目，所以这些jar包都找不着了，我也不知道是不是这样 
 
@@ -36,7 +36,7 @@ JAVA EE是由一系列规范组成的，规范是由JCP制定的，并且提供�
 
 ![](http://dl.iteye.com/upload/attachment/0071/9859/74e91e81-5c6f-334f-8b42-f87979513c10.png)
 
-在jboss安装目录的/modules/javax/jms/api/main目录下，也可以找到 
+在jboss安装目录的`/modules/javax/jms/api/main`目录下，也可以找到 
 
 ![](http://dl.iteye.com/upload/attachment/0071/9864/30946fba-c3a8-3ba2-b0c3-b8acc134d3f9.png)
 
@@ -76,13 +76,13 @@ jboss也是开源的，不过没有tomcat那么方便，需要下载以后自己
 
 不过这里有一点要澄清一下，就是一般来说，开发者是不需要用到接口jar包的源码的 
 
-[](http://java.net/jira/browse/GLASSFISH-11389)，这个帖子里说到： 
+[GLASSFISH](http://java.net/jira/browse/GLASSFISH-11389)，这个帖子里说到： 
 
 To assist developers to do what? The corresponding JARs are stripped (no bytecode for methods) and are meant to be used only for compilation. IDEs like NB or Eclipse bundle a zip for the javadoc. What other use case do you need to get the src? Debugging? In this case, these jars are not used for execution so also not for debugging. In the case of debugging, I think there is a complete GF src somewhere to step into the real code you execute from the real non stripped gf jars. 
 
 接口jar包的源码是移除的，只是用于编译。一般的IDE都有zip文件来提供javadoc。对于需要debug的场景，需要源码的也应该是实现类，而不是接口 
 
-[](http://stackoverflow.com/questions/7457810/how-to-get-the-source-code-for-the-javaxjavaee-api-6-0-jar)，这个帖子也表达了类似的意思： 
+[STACKOVERFLOW](http://stackoverflow.com/questions/7457810/how-to-get-the-source-code-for-the-javaxjavaee-api-6-0-jar)，这个帖子也表达了类似的意思： 
 
 The purpose of the javaee-api module is to satisfy compile-time dependencies (That is why the Maven scope is set to provided). The module contains interface declarations (or contract) which must be satisfied by the J2EE container you plan to use. If you really need/want to see the source code, I'd suggest taking a look at one of the open source J2EE containers. 
 

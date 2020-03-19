@@ -65,7 +65,7 @@ The bounds rectangle, which describes the view’s location and size in its own 
 
 在实践中发现，frame更好用一些。比如这个view
 
-![](http://img.blog.csdn.net/20140221132538031)
+![](http://pic.kyfxbl.com/zsd3.jpeg)
 
 下方这些button，指定它们的位置时，如果直接设置它们的frame，则需要使用root view的坐标系统（因为其super view是root view），计算起来很不方便
 

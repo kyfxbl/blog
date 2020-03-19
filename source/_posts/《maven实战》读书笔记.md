@@ -10,9 +10,9 @@ categories: 读书笔记
 
 在windows环境下，安装完maven之后，需要配置3个环境变量：path、M2_HOME、MAVEN_OPTS 
 
-其中前2个是必须的，MAVEN_OPTS变量配置以后，可以避免一些场景下的内存溢出。一般配置为MAVEN_OPTS:-Xms128m -Xmx512m 
+其中前2个是必须的，MAVEN_OPTS变量配置以后，可以避免一些场景下的内存溢出。一般配置为`MAVEN_OPTS:-Xms128m -Xmx512m` 
 
-然后将%M2_HOME%/conf/settings.xml，复制到%USER_HOME%/.m2/下 
+然后将`%M2_HOME%/conf/settings.xml`，复制到`%USER_HOME%/.m2/`下 
 
 对于公司内禁止了外网访问的，需要配置代理服务器，在settings.xml里配置
 
@@ -90,7 +90,7 @@ classifier，是用来帮助定义构建输出的一些附属构建，如javadoc
 
 # 仓库
 
-maven的仓库只有2类，第一种是本地仓库，默认在%USER_HOME%/.m2/repository目录下；第二种是远程仓库，默认的是maven提供的中央仓库，另外还有很多中央仓库的镜像仓库，以及第三方仓库。一般来说，项目组会在自己的maven服务器上建私服 
+maven的仓库只有2类，第一种是本地仓库，默认在`%USER_HOME%/.m2/repository`目录下；第二种是远程仓库，默认的是maven提供的中央仓库，另外还有很多中央仓库的镜像仓库，以及第三方仓库。一般来说，项目组会在自己的maven服务器上建私服 
 
 ## 私服
 

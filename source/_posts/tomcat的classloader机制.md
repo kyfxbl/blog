@@ -36,13 +36,13 @@ tomcat的classloader机制分析
 
 jvm默认定义了三种classloader，分别是bootstrap classloader、extension classloader、system classloader 
 
-bootstrap是jvm的一部分，用C写的，每一个java程序都会启动它，去加载%JAVA_HOME%/jre/lib/rt.jar 
+bootstrap是jvm的一部分，用C写的，每一个java程序都会启动它，去加载`%JAVA_HOME%/jre/lib/rt.jar`
 
-extension也差不多，它会去加载%JAVA_HOME%/jre/lib/ext/下的类 
+extension也差不多，它会去加载`%JAVA_HOME%/jre/lib/ext/`下的类 
 
 system则是会去加载系统变量CLASSPATH下的所有类 
 
-这3个部分，在上面的tomcat classloader模型图中都有体现。不过可以看到extension没有画出来，可以理解为是跟bootstrap合并了，都是去%JAVA_HOME%/jre/lib下面加载类 
+这3个部分，在上面的tomcat classloader模型图中都有体现。不过可以看到extension没有画出来，可以理解为是跟bootstrap合并了，都是去`%JAVA_HOME%/jre/lib`下面加载类 
 
 另外，java的classloader一般是采用委托机制，即classloader都有一个parent classloader，当它收到一个加载类的请求时，会首先请求parent classloader加载，如果parent classloader加载不到，才会自己去尝试加载（如果自己也加载不到，则抛出ClassNotFoundException）
 
@@ -66,17 +66,17 @@ This class loader contains the basic runtime classes provided by the Java Virtua
 
 ## System 
 
-这个classloader通常是由CLASSPATH这个环境变量初始化的，通过这个classloader加载的所有类，都对tomcat自身的类，以及所有web应用的类可见。但是，标准的tomcat启动脚本（$CATALINA_HOME/bin/catalina.bat），完全无视默认的CLASSPATH环境变量，而是加载了以下3个.jar 
+这个classloader通常是由CLASSPATH这个环境变量初始化的，通过这个classloader加载的所有类，都对tomcat自身的类，以及所有web应用的类可见。但是，标准的tomcat启动脚本`$CATALINA_HOME/bin/catalina.bat`，完全无视默认的CLASSPATH环境变量，而是加载了以下3个jar 
 
-$CATALINA_HOME/bin/bootstrap.jar — Contains the main() method that is used to initialize the Tomcat server, and the class loader implementation classes it depends on. 
+`$CATALINA_HOME/bin/bootstrap.jar` — Contains the main() method that is used to initialize the Tomcat server, and the class loader implementation classes it depends on. 
 
-$CATALINA_HOME/bin/tomcat-juli.jar — Logging implementation classes. These include enhancement classes to java.util.logging API, known as Tomcat JULI, and a package-renamed copy of Apache Commons Logging library used internally by Tomcat. 
+`$CATALINA_HOME/bin/tomcat-juli.jar` — Logging implementation classes. These include enhancement classes to java.util.logging API, known as Tomcat JULI, and a package-renamed copy of Apache Commons Logging library used internally by Tomcat. 
 
-$CATALINA_HOME/bin/commons-daemon.jar — The classes from Apache Commons Daemon project.（这个类不是直接在$CATALINA_HOME/bin/catalina.bat里加进来的，不过在bootstrap.jar的manifest文件中包含进来了） 
+`$CATALINA_HOME/bin/commons-daemon.jar` — The classes from Apache Commons Daemon project.（这个类不是直接在$CATALINA_HOME/bin/catalina.bat里加进来的，不过在bootstrap.jar的manifest文件中包含进来了） 
 
 ## Common 
 
-这个classloader加载的类，对tomcat的类和web app的类都是可见的。通常来说，应用程序的类不应该放在这里。该加载器的加载路径是在$CATALINA_BASE/conf/catalina.properties文件里，通过common.loader属性来定义的，默认是：
+这个classloader加载的类，对tomcat的类和web app的类都是可见的。通常来说，应用程序的类不应该放在这里。该加载器的加载路径是在`$CATALINA_BASE/conf/catalina.properties`文件里，通过common.loader属性来定义的，默认是：
 
 ```
 common.loader=${catalina.base}/lib,${catalina.base}/lib/*.jar,${catalina.home}/lib,${catalina.home}/lib/*.jar

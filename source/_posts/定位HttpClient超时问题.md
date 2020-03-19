@@ -8,7 +8,7 @@ categories: java
 
 # 新版API设置超时时间的方法
 
-HttpClient目前最新的版本是httpcomponents-client-4.2.1，是基于httpcomponents-core-4.2.1的，该库在版本升级过程中，发生过比较大的变动。之前这个库叫做HttpClient，现在统称为HttpComponents，拆分成了client和core，应该是重新写过。因为API的变化比较大，以前的方法，在这个新的版本里不好使了
+HttpClient目前最新的版本是`httpcomponents-client-4.2.1`，是基于`httpcomponents-core-4.2.1`的，该库在版本升级过程中，发生过比较大的变动。之前这个库叫做HttpClient，现在统称为HttpComponents，拆分成了client和core，应该是重新写过。因为API的变化比较大，以前的方法，在这个新的版本里不好使了
 
 查了一下，发现超时包括ConnectionTimeout和SocketTimeout，这点和老版本一样，分别用于设置建立HTTP连接超时的时间，以及从响应中读取数据超时的时间。用以下2个参数设置：
 
@@ -94,13 +94,13 @@ InetAddress[] addresses = resolveHostname(target.getHostName());
 [www.baidu.com/61.135.169.125, www.baidu.com/61.135.169.105]
 ```
 
-原来通过DNS查询，我输入的域名www.baidu.com，返回了2个地址。 然后接下来的代码，会对2个地址都尝试建立连接，每次尝试的超时时间都是5秒，当所有连接都失败之后，才会抛出ConnectTimeoutException。所以实际超时时间，就成了我设置的2倍 
+原来通过DNS查询，我输入的域名`www.baidu.com`，返回了2个地址。 然后接下来的代码，会对2个地址都尝试建立连接，每次尝试的超时时间都是5秒，当所有连接都失败之后，才会抛出ConnectTimeoutException。所以实际超时时间，就成了我设置的2倍 
 
 此外，我的方法其实设置了HttpRequestInterceptor，但是实际并没有执行，因为请求拦截器的调用，是发生在建立连接成功之后的。这里在建立连接时就超时了，所以HttpRequestInterceptor并没有执行的机会 
 
 这个问题至此就定位完成了，可以总结几点： 
 
-1、CoreConnectionPNames.CONNECTION_TIMEOUT定义的是建立HTTP连接超时的时间，CoreConnectionPNames.SO_TIMEOUT定义的是读取response超时的时间 
+1、`CoreConnectionPNames.CONNECTION_TIMEOUT`定义的是建立HTTP连接超时的时间，`CoreConnectionPNames.SO_TIMEOUT`定义的是读取response超时的时间 
 
 2、设置是通过HttpParams来完成的，HttpRequest的设置，优先于HttpClient的设置 
 
@@ -112,7 +112,7 @@ InetAddress[] addresses = resolveHostname(target.getHostName());
 
 在定位这个问题的时候，我发现InetAddress这个类，我断点跟不进去，这个类位于rt.jar的java.net包里，按理说是应该能跟进去的
 
-检查了一下，发现是eclipse的设置有错，Preferences-->Java-->Installed JREs里，我设置成了jre的路径，实际上要设置成jdk的路径 
+检查了一下，发现是eclipse的设置有错，`Preferences-->Java-->Installed JREs`里，我设置成了jre的路径，实际上要设置成jdk的路径 
 
 ![](http://dl.iteye.com/upload/attachment/0071/6873/cb007616-89ef-3583-95e9-f40a7a317360.png)
 
@@ -145,9 +145,9 @@ JAVAC_CMD      = $(JAVAC) $(JIT_OPTION) $(JAVACFLAGS) $(LANGUAGE_VERSION) $(CLAS
 
 [debug jdk的下载地址](http://jdk6.java.net/download.html) 
 
-总结来说，.java在编译的时候，需要加上-g参数，编译出的.class才会包含LocalVariableTable信息，以进行调试 
+总结来说，java在编译的时候，需要加上-g参数，编译出的.class才会包含LocalVariableTable信息，以进行调试 
 
-引申一下，我们平时用Eclipse写的代码，可以直接调试，是因为Eclipse默认会让编译器带上调试信息，设置的地方在Preferences-->Java-->Compiler 
+引申一下，我们平时用Eclipse写的代码，可以直接调试，是因为Eclipse默认会让编译器带上调试信息，设置的地方在`Preferences-->Java-->Compiler` 
 
 ![](http://dl.iteye.com/upload/attachment/0071/6869/78d95378-69db-3840-83e8-e5590614e51f.png)
 

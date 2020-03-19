@@ -10,13 +10,13 @@ categories: java
 
 坐标是构件的逻辑表示方式，而物理表示方式则是文件。构件所在的文件路径，是由GAV决定的 
 
-比如log4j:log4j:1.2.15，所在的仓库路径是：%repository_path%/log4j/log4j/1.2.15/log4j-1.2.15.jar 
+比如log4j:log4j:1.2.15，所在的仓库路径是：`%repository_path%/log4j/log4j/1.2.15/log4j-1.2.15.jar`
 
-其中%repository_path%是跟仓库的实现有关，构件自身的命名规则是：groupId/artifactId/version/artifactId-version.packaging 
+其中`%repository_path%`是跟仓库的实现有关，构件自身的命名规则是：`groupId/artifactId/version/artifactId-version.packaging` 
 
 # 超级POM的位置 
 
-超级POM在这个路径：%M2_HOME%/lib/maven-model-builder-3.0.jar，解压之后的org/apache/maven/model/pom-4.0.0.xml 
+超级POM在这个路径：`%M2_HOME%/lib/maven-model-builder-3.0.jar`，解压之后的`org/apache/maven/model/pom-4.0.0.xml` 
 
 # 远程仓库的认证 
 
@@ -76,9 +76,9 @@ categories: java
 
 # 插件配置的方法 
 
-第一种方法，是在命令行用-D参数配置，这种方法仅对当次操作有效。比如maven-surefire-plugin插件的test目标提供了skip参数，对应的表达式是${maven.test.skip} 
+第一种方法，是在命令行用-D参数配置，这种方法仅对当次操作有效。比如maven-surefire-plugin插件的test目标提供了skip参数，对应的表达式是`${maven.test.skip}` 
 
-那么可以在命令行输入，mvn install -Dmaven.test.skip = true 
+那么可以在命令行输入，`mvn install -Dmaven.test.skip = true` 
 
 要注意的是，并不是所有的插件目标参数都提供表达式的，对于这种没有提供表达式的参数，就只能在pom文件里配置了 
 

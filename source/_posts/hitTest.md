@@ -8,7 +8,7 @@ hitTest方法，简而言之，就是给定一个点，返回一个view或layer�
 
 # 原理
 
-当用户触摸屏幕的时候，系统会依次调用view层次中各个子view的hitTest方法，来判断当前是哪个view被点中，决定谁是first responder。关于这点，这篇文章总结得不错：[iOS事件分发机制（一） hit-Testing](http://suenblog.duapp.com/blog/100031/iOS%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91%E6%9C%BA%E5%88%B6%EF%BC%88%E4%B8%80%EF%BC%89%20hit-Testing)
+当用户触摸屏幕的时候，系统会依次调用view层次中各个子view的hitTest方法，来判断当前是哪个view被点中，决定谁是first responder
 
 默认的实现就是触摸点是否在此view的范围内，开发者可以重写此方法，来实现不同的逻辑。具体来说有2种常见的场景
 

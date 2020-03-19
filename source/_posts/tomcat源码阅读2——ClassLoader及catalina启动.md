@@ -62,13 +62,13 @@ tomcat启动是从运行startup.bat脚本开始的，在此脚本中首先会设
 
 ## 加载Bootstrap类 
 
-在catalina.bat中，会将classpath设置为%CATALINA_HOME%/bin/bootstrap.jar和%CATALINA_HOME%/bin/tomcat-juli.jar，然后根据此classpath创建System类加载器，加载bootstrap.jar中的Bootstrap.class，执行main()方法 
+在`catalina.bat`中，会将`classpath`设置为`%CATALINA_HOME%/bin/bootstrap.jar`和`%CATALINA_HOME%/bin/tomcat-juli.jar`，然后根据此classpath创建System类加载器，加载bootstrap.jar中的Bootstrap.class，执行main()方法 
 
 ## 调用Catalina类 
 
-在Bootstrap.class里，读取配置文件（%CATALINA_HOME%/conf/catalina.properties），然后创建Common ClassLoader，加载%CATALINA_HOME%/lib里的所有jar包 
+在`Bootstrap.class`里，读取配置文件`%CATALINA_HOME%/conf/catalina.properties`，然后创建Common ClassLoader，加载`%CATALINA_HOME%/lib`里的所有jar包 
 
-之后根据实际的命令行参数，调用org.apache.catalina.startup.Catalina中相应的方法，比如start()等 
+之后根据实际的命令行参数，调用`org.apache.catalina.startup.Catalina`中相应的方法，比如start()等 
 
 # 参考文档 
 

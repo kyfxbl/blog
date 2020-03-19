@@ -56,7 +56,7 @@ public boolean isDefaultNamespace(String namespaceUri) {
 	}
 ```
 
-只有http://www.springframework.org/schema/beans，会被认为是默认的命名空间。也就是说，beans、bean这些元素，会认为属于默认的命名空间，而像task:scheduled这些，就认为不属于默认命名空间 
+只有`http://www.springframework.org/schema/beans`，会被认为是默认的命名空间。也就是说，beans、bean这些元素，会认为属于默认的命名空间，而像task:scheduled这些，就认为不属于默认命名空间 
 
 根节点beans的一个子节点bean，是属于默认命名空间的，所以会进入parseDefaultElement()方法
 ```

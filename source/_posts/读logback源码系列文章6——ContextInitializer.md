@@ -257,7 +257,7 @@ void callBeginAction(List applicableActionList, String tagName,
 
 4、Interpreter对象委托EventPlayer对象，循环遍历XML文件中的所有节点 
 
-5、根据节点的类型（<element>、</element>、content），调用Interpreter中的startElement()、characters()、endElement()方法 
+5、根据节点的类型（`<element>`、`</element>`、`content`），调用Interpreter中的startElement()、characters()、endElement()方法 
 
 6、Interpreter委托RuleStore来匹配元素名，选择合适的Action 
 

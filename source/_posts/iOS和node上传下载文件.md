@@ -141,6 +141,7 @@ View省略，只介绍关键的ViewController代码
 
 关键是怎么拿到NSURLSessionUploadTask，虽然NSURLSession提供了uploadTaskWithRequest:fromFile:方法，不过经过实践，发现跑不通。NSURLSession似乎不会自动加上Content-Type头，也不会自动在Data中加入boundary，结果就是server端报错：
 
+```
 TypeError: Cannot call method 'on' of undefined     
 at /Users/apple/WebstormProjects/uploadAndDownloadServer/lib/main.js:15:14     
 at callbacks (/Users/apple/WebstormProjects/uploadAndDownloadServer/node_modules/express/lib/router/index.js:161:37)     
@@ -152,6 +153,7 @@ at next (/Users/apple/WebstormProjects/uploadAndDownloadServer/node_modules/expr
 at next (/Users/apple/WebstormProjects/uploadAndDownloadServer/node_modules/express/node_modules/connect/lib/proto.js:165:78)     
 at multipart (/Users/apple/WebstormProjects/uploadAndDownloadServer/node_modules/express/node_modules/connect/lib/middleware/multipart.js:60:27)     
 at /Users/apple/WebstormProjects/uploadAndDownloadServer/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js:57:9
+```
 
 所以我最后的做法是，自己从File中读出Data，并拼上所需的控制符，这都是在prepareDataForUpload()方法里实现的
 
