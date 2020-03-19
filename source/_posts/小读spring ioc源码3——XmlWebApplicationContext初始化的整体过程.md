@@ -1,5 +1,5 @@
 title: 小读spring ioc源码3——XmlWebApplicationContext初始化的整体过程
-date: 2013-09-24 11:05
+date: 2013-09-24 11:02
 categories: 源码阅读 
 ---
 ![spring](http://pic.kyfxbl.com/spring.png)

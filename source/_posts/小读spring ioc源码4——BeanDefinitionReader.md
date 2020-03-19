@@ -1,5 +1,5 @@
 title: 小读spring ioc源码4——BeanDefinitionReader
-date: 2013-09-24 11:05
+date: 2013-09-24 11:01
 categories: 源码阅读 
 ---
 ![spring](http://pic.kyfxbl.com/spring.png)
